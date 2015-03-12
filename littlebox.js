@@ -1,21 +1,20 @@
 
 /*
- *  LITTLEBOX v1 
+ *  	LITTLEBOX v1 
  *	BY: Ariel Saldana @ www.destiny.io
  *	Available for use under the MIT License
 */
 
+
 // Dynamically removes the function
 $(document).on('click','#littlebox-background',function() {
      $(this).closest("div#littlebox-background").remove();
-	 
 });
 
 ;( function( $, window, document, undefined )
 {
 	'use strict';
 
-	
 	var darkBackgroundSupport = function()
 	{
 		var div = document.createElement("div");
@@ -25,8 +24,6 @@ $(document).on('click','#littlebox-background',function() {
 		div.style.color = "white";
 		div.innerHTML = "Hello";
 	}
-	
-	
 	
 	var cssTransitionSupport = function()
 		{
@@ -182,13 +179,8 @@ $(document).on('click','#littlebox-background',function() {
 					$(this).css('visibility', 'hidden');
 				});
 					// start
-					//if(!document.getElementById("littlebox-background")){
 					if(options.hasBackground && !backgroundSet){
-						//var background = document.createElement('div');
-						//background.id = 'littlebox-background';
-						//document.getElementsByTagName('body')[0].appendChild(background);
-						//document.getElementsByTagName('body')[0].appendChild(background);
-					$('#hello').prepend('<div id="littlebox-background"></div>');
+						$('#hello').prepend('<div id="littlebox-background"></div>');
 					backgroundSet = true;
 					}
 					
